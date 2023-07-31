@@ -13,4 +13,4 @@
 
 - Knowledge
   * MITRE ATT&CK Fundamentals, Sysmon Log Basic, Windows Event Log.
- * mimi cuts 
+ * mimikats 
