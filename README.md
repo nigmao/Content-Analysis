@@ -4,7 +4,7 @@
 - Sysmonlog
   * [setup filed in event-viewer config.xml](https://rootdse.org/posts/understanding-sysmon-events/#event-id-10-processaccess')
   * Threat Hunting with sysmon and collecting, analyzing and sending logs to:
-   + 1. SIEM
+            + 1. SIEM
 	    + 2. Workstation logs (Linux or Windows)
   * Sysmon config - alert for:
 	    + 1. Process creation: ID-1
