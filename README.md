@@ -3,7 +3,10 @@
 - Mitre and ATT&CK
 - Sysmonlog
   * [setup filed in event-viewer config.xml](https://rootdse.org/posts/understanding-sysmon-events/#event-id-10-processaccess')
-  * sysmon -accepteula -i sysmonconfig-export.xml
+  * https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon
+  ```powershell
+  sysmon -accepteula -i sysmonconfig-export.xml
+  ```
   * Threat Hunting with sysmon and collecting, analyzing and sending logs to:
     + 1. SIEM
     + 2. Workstation logs (Linux or Windows)
