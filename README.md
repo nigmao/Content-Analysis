@@ -6,7 +6,7 @@
   * Threat Hunting with sysmon and collecting, analyzing and sending logs to:
     + 1. SIEM
     + 2. Workstation logs (Linux or Windows)
-  * Sysmon config - alert for:
+  * Sysmon config - ID logs:
     + 1. Process creation: ID-1
     + 2. Network connection: ID-3 (Only UDP/TCP)
     + 3. DLL Loaded: ID-7
