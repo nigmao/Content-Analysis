@@ -30,4 +30,12 @@
 
 - Knowledge
   * MITRE ATT&CK Fundamentals, Sysmon Log Basic, Windows Event Log.
- * mimikats 
+
+- Powershell learn
+   * https://learn.microsoft.com/en-us/training/modules/script-with-powershell/2-introduction-scripting
+   * PowerShell default disable run script `Set-ExecutionPolicy Unrestricted` . 
+     + Restricted: No Powershell scripts can be run. This is the default setting. 
+     + AllSigned: Scripts can be run, but all must have a digital signature. Even if you wrote the script yourself on the local computer. 
+     + RemoteSigned: Locally-written scripts can be run. But scripts from outside (email, IM, Internet) must be signed by a trusted publisher. 
+     + Unrestricted: Any script will run. Regardless of who created them or whether they are signed.  
+   
