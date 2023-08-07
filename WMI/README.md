@@ -1,7 +1,7 @@
 # WMI
 
 
-## CLIENTS
+## [0] CLIENTS
 ```powershell 
 PS C:\Users\trant> nmap 192.168.137.145 -p 135
 Starting Nmap 7.94 ( https://nmap.org ) at 2023-08-07 12:49 SE Asia Standard Time
@@ -30,7 +30,7 @@ $Set-Item WSMan:\localhost\Client\AllowUnencrypted -Value $true
 $Set-Item WSMan:\localhost\Service\AllowUnencrypted -Value $true
 ```
 
-## SERVER 
+## [1] SERVER 
 ` [1] Run WMIC in windows server 2019
 ```
 Set-Service -Name winrm -StartupType Automatic
