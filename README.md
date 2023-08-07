@@ -1,6 +1,7 @@
 # Content-Analysis
 - **NOTE:**
    * [Learn sysinternal](https://www.youtube.com/watch?v=fCp2usRXmGg) .
+   * [PowerShell Script to Connect Multiple Server's Remote Session](https://www.youtube.com/watch?v=zaSxFqLTf0s&t=124s) .
    * https://www.nextron-systems.com/2018/02/10/write-sigma-rules/
    * https://detection.fyi/sigmahq/sigma/windows/process_creation/proc_creation_win_wmic_uninstall_application/?query=t1047
    * https://redcanary.com/threat-detection-report/techniques/windows-management-instrumentation/
