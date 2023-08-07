@@ -55,8 +55,22 @@ winrm get winrm/config/service
 Set-Item WSMan:\localhost\Service\AllowUnencrypted -Value $true
 ```
 
-- script:
+## [2] POWERSHELL SCRIPT:
+- Report
+```
+$ wmic /node:"127.0.0.1" process call create "calc.exe"
+$ Invoke-WmiMethod -Class Win32_Process -Name Create -ArgumentList 'calc.exe' -ComputerName 127.0.0.1 -Credential 'debug\Administrator' 
+```
+- script1.ps1
+
 ```
 $credential = Get-Credential  # Nhập thông tin đăng nhập của tài khoản trên máy chủ Windows Server 2019
 Invoke-WmiMethod -Class Win32_Process -Name Create -ArgumentList 'powershell.exe -Command "Get-Process"' -ComputerName "IP_HOAC_TEN_MAY_CHU" -Credential $credential
 ```
+
+- script2.ps1
+
+
+- script3.ps1
+
+
