@@ -1,5 +1,9 @@
 # Content-Analysis
-
+- **NOTE:**
+   * https://www.nextron-systems.com/2018/02/10/write-sigma-rules/
+   * https://detection.fyi/sigmahq/sigma/windows/process_creation/proc_creation_win_wmic_uninstall_application/?query=t1047
+   * https://redcanary.com/threat-detection-report/techniques/windows-management-instrumentation/
+## [0] EventLogs
 - Sysmonlog
   * [setup filed in event-viewer config.xml](https://rootdse.org/posts/understanding-sysmon-events/#event-id-10-processaccess')
   * https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon
