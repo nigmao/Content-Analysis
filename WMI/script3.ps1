@@ -1,10 +1,12 @@
-$credential = Get-Credential  # Nhập thông tin đăng nhập của tài khoản trên máy chủ Windows Server 2019
+$password = "nigmaz76$" | ConvertTo-SecureString -asPlainText -Force
+$username = "debug\administrator"
+$credential = New-Object System.Management.Automation.PSCredential($username, $password)
 $processName = "calc.exe"
 $command = "Get-Process"
 
 # Tạo đối tượng Win32_ProcessStartup để cấu hình chạy ẩn
 $processStartup = (Get-WmiObject -List -Namespace "root\cimv2" -Class Win32_ProcessStartup).CreateInstance()
-$processStartup.ShowWindow = 0  # 0: Ẩn tiến trình, 1: Hiển thị tiến trình
+$processStartup.ShowWindow = 1  # 0: Ẩn tiến trình, 1: Hiển thị tiến trình
 
 # Tạo đối tượng Win32_Process để chạy tiến trình
 $processClass = Get-WmiObject -List -Namespace "root\cimv2" -Class Win32_Process
