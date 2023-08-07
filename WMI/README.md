@@ -16,15 +16,15 @@ Nmap done: 1 IP address (1 host up) scanned in 13.43 seconds
 PS C:\Users\trant>
 ```
 
-- `Get-NetConnectionProfile`
+- [1] [Bật mạng thành private](https://vitinhquan7.info/cach-thay-doi-mang-cong-cong-thanh-mang-rieng/)
 ```
+Get-NetConnectionProfile
 set NetworkCategory          : Private
 ```
-- [Bật mạng thành private](https://vitinhquan7.info/cach-thay-doi-mang-cong-cong-thanh-mang-rieng/)
 
-- `Enable-PSRemoting -Force`
+- [2] `Enable-PSRemoting -Force`
 - `winrm quickconfig` start winrm in clients
-- set AllowUnencrypted true
+- [3] set AllowUnencrypted true
 ```powershell 
 $Set-Item WSMan:\localhost\Client\AllowUnencrypted -Value $true
 $Set-Item WSMan:\localhost\Service\AllowUnencrypted -Value $true
