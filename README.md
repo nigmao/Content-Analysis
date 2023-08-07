@@ -1,6 +1,5 @@
 # Content-Analysis
 
-- Mitre and ATT&CK
 - Sysmonlog
   * [setup filed in event-viewer config.xml](https://rootdse.org/posts/understanding-sysmon-events/#event-id-10-processaccess')
   * https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon
@@ -21,21 +20,18 @@
     + 8. Alternate Data streams ID-15
     + 9. DNS Events ID-22
   
-- Windows Logs
+- Windows EventLogs:
   * Event Viewer: view powershell logs script
      + https://learn.microsoft.com/en-us/powershell/scripting/windows-powershell/wmf/whats-new/script-logging?view=powershell-7.3
      + https://www.techtarget.com/searchwindowsserver/tutorial/Set-up-PowerShell-script-block-logging-for-added-security
-- Event ID:
-  * process creation event id: 4688
 
-- Knowledge
-  * MITRE ATT&CK Fundamentals, Sysmon Log Basic, Windows Event Log.
-
+## [1] Knowledge:
+- MITRE ATT&CK Fundamentals, Sysmon Log Basic, Windows Event Log.
 - Powershell learn
    * https://learn.microsoft.com/en-us/training/modules/script-with-powershell/2-introduction-scripting
    * PowerShell default disable run script `Set-ExecutionPolicy Unrestricted` . 
      + Restricted: No Powershell scripts can be run. This is the default setting. 
      + AllSigned: Scripts can be run, but all must have a digital signature. Even if you wrote the script yourself on the local computer. 
      + RemoteSigned: Locally-written scripts can be run. But scripts from outside (email, IM, Internet) must be signed by a trusted publisher. 
-     + Unrestricted: Any script will run. Regardless of who created them or whether they are signed.  
-   
+     + Unrestricted: Any script will run. Regardless of who created them or whether they are signed.
+- 
