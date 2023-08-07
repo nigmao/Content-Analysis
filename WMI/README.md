@@ -25,7 +25,8 @@ set NetworkCategory          : Private
 - [2] `Enable-PSRemoting -Force`
 - `winrm quickconfig` start winrm in clients
 - [3] set AllowUnencrypted true
-```powershell 
+```powershell
+winrm get winrm/config/client
 $Set-Item WSMan:\localhost\Client\AllowUnencrypted -Value $true
 $Set-Item WSMan:\localhost\Service\AllowUnencrypted -Value $true
 ```
