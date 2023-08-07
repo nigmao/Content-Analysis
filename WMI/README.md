@@ -1,5 +1,16 @@
 # WMI
 
+- Thao tác GUI để add debug\Administrator
+
+```
+Component Services
+user Debug\Administrator 
+add 2 option 
+
+windows + R
+wmimgmt.msc
+add user Debug\Administrator
+```
 
 ## [0] CLIENTS
 ```powershell 
@@ -30,7 +41,10 @@ winrm get winrm/config/client
 $Set-Item WSMan:\localhost\Client\AllowUnencrypted -Value $true
 $Set-Item WSMan:\localhost\Service\AllowUnencrypted -Value $true
 ```
-
+- [4] WMI nhận máy server là legit
+```
+Set-Item WSMan:\localhost\Client\TrustedHosts -Value "192.168.137.145" -Concatenate -Force
+```
 ## [1] SERVER 
 ` [1] Run WMIC in windows server 2019
 ```
@@ -40,6 +54,9 @@ Start-Service winrm
 
 - [2] Đoạn allow firewall này nên xem thêm
 ```
+Get-Service -Name RpcSs
+Start-Service -Name RpcSs
+Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False
 Set-NetFirewallRule -Name WINRM-HTTP-In-TCP-PUBLIC -RemoteAddress Any
 Set-NetFirewallRule -Name WINRM-HTTP-In-TCP-PRIVATE -RemoteAddress Any
 ```
@@ -65,16 +82,6 @@ wmic /node:"127.0.0.1" process call create "calc.exe"
 Invoke-WmiMethod -Class Win32_Process -Name Create -ArgumentList 'calc.exe' -ComputerName 127.0.0.1 -Credential 'debug\Administrator' 
 ```
 
-- script1.ps1
 
-```
-$credential = Get-Credential  # Nhập thông tin đăng nhập của tài khoản trên máy chủ Windows Server 2019
-Invoke-WmiMethod -Class Win32_Process -Name Create -ArgumentList 'powershell.exe -Command "Get-Process"' -ComputerName "IP_HOAC_TEN_MAY_CHU" -Credential $credential
-```
-
-- script2.ps1
-
-
-- script3.ps1
 
 
