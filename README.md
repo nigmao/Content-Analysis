@@ -3,6 +3,8 @@
    * https://www.nextron-systems.com/2018/02/10/write-sigma-rules/
    * https://detection.fyi/sigmahq/sigma/windows/process_creation/proc_creation_win_wmic_uninstall_application/?query=t1047
    * https://redcanary.com/threat-detection-report/techniques/windows-management-instrumentation/
+   * https://learn.microsoft.com/en-us/windows/win32/wmisdk/connecting-to-wmi-on-a-remote-computer
+   * https://learn.microsoft.com/en-us/windows/win32/wmisdk/connecting-to-wmi-remotely-starting-with-vista
 ## [0] EventLogs
 - Sysmonlog
   * [setup filed in event-viewer config.xml](https://rootdse.org/posts/understanding-sysmon-events/#event-id-10-processaccess')
@@ -38,4 +40,4 @@
      + AllSigned: Scripts can be run, but all must have a digital signature. Even if you wrote the script yourself on the local computer. 
      + RemoteSigned: Locally-written scripts can be run. But scripts from outside (email, IM, Internet) must be signed by a trusted publisher. 
      + Unrestricted: Any script will run. Regardless of who created them or whether they are signed.
-- 
+- ...
