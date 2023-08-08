@@ -9,7 +9,7 @@ user Debug\Administrator
 add 2 option 
 
 windows + R
-wmimgmt.msc
+wmimgmt.msc => Security
 add user Debug\Administrator
 ```
 
