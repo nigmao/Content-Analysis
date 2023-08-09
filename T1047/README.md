@@ -1,4 +1,5 @@
-# WMI
+# Windows Management Instrumentation
+
 - https://learn.microsoft.com/en-us/windows/win32/wmisdk/connecting-to-wmi-on-a-remote-computer
 - https://learn.microsoft.com/en-us/windows/win32/wmisdk/connecting-to-wmi-remotely-starting-with-vista
 - Thao tác GUI để add debug\Administrator
