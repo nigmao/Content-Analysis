@@ -30,8 +30,9 @@
   
 - Windows EventLogs:
   * Event Viewer: View logs PowerShell Commands
-     + https://learn.microsoft.com/en-us/powershell/scripting/windows-powershell/wmf/whats-new/script-logging?view=powershell-7.3
-     + https://www.techtarget.com/searchwindowsserver/tutorial/Set-up-PowerShell-script-block-logging-for-added-security
+  ```powershell
+  Open the Local Group Policy Editor and navigate to Computer Configuration > Administrative Templates > Windows Components > Windows PowerShell > Turn on PowerShell Script Block Logging.
+  ```
 
 ## [1] Knowledge:
 - MITRE ATT&CK Fundamentals, Sysmon Log Basic, Windows Event Log.
