@@ -23,15 +23,15 @@
   ./Sysmon64.exe -accepteula -i sysmonconfig-export.xml
   ```
   * Sysmon config - ID logs:
-    + 1. Process creation: ID-1
-    + 2. Network connection: ID-3 (Only UDP/TCP)
-    + 3. DLL Loaded: ID-7
-    + 4. Process Hollowing: ID-8
-    + 5. Process Access: ID-10
-    + 6. File Created ID-11
-    + 7. Registry Key ID-12/13/14
-    + 8. Alternate Data streams ID-15
-    + 9. DNS Events ID-22
+    + `1.` Process creation: ID-1
+    + `2.` Network connection: ID-3 (Only UDP/TCP)
+    + `3.` DLL Loaded: ID-7
+    + `4.` Process Hollowing: ID-8
+    + `5.` Process Access: ID-10
+    + `6.` File Created ID-11
+    + `7.` Registry Key ID-12/13/14
+    + `8.` Alternate Data streams ID-15
+    + `9.` DNS Events ID-22
   
 - Windows EventLogs:
   * Event Viewer: View logs PowerShell Commands
@@ -39,9 +39,9 @@
   Open the Local Group Policy Editor/Computer Configuration/Administrative Templates/Windows Components/Windows PowerShell/Turn on PowerShell Script Block Logging.
   ```
   * PowerShell default disable run script `Set-ExecutionPolicy Unrestricted` .
-     + Restricted: No Powershell scripts can be run. This is the default setting. 
-     + AllSigned: Scripts can be run, but all must have a digital signature. Even if you wrote the script yourself on the local computer. 
-     + RemoteSigned: Locally-written scripts can be run. But scripts from outside (email, IM, Internet) must be signed by a trusted publisher. 
-     + Unrestricted: Any script will run. Regardless of who created them or whether they are signed.
+     + `Restricted:` No Powershell scripts can be run => This is the default setting. 
+     + `AllSigned:` Scripts can be run, but all must have a digital signature => Even if you wrote the script yourself on the local computer. 
+     + `RemoteSigned` Locally-written scripts can be run => But scripts from outside (email, IM, Internet) must be signed by a trusted publisher. 
+     + `Unrestricted:` Any script will run => Regardless of who created them or whether they are signed.
 
 
