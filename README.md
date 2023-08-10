@@ -31,7 +31,7 @@
 - Windows EventLogs:
   * Event Viewer: View logs PowerShell Commands
   ```powershell
-  Open the Local Group Policy Editor and navigate to Computer Configuration > Administrative Templates > Windows Components > Windows PowerShell > Turn on PowerShell Script Block Logging.
+  Open the Local Group Policy Editor/Computer Configuration/Administrative Templates/Windows Components/Windows PowerShell/Turn on PowerShell Script Block Logging.
   ```
 
 ## [1] Knowledge:
