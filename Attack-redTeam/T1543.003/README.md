@@ -3,10 +3,11 @@
 - Code and compile program `Windows Service Application` - WannaCry.exe
 
 - Create Service `(Administrator: Command Prompt)`
-  - Create Service follow case attack WannaCry.
+  * Create Service follow case attack WannaCry.
   ```powershell
   sc create "mssecsvc2.0" DisplayName = "Microsoft Security Center (2.0) Service" binPath = "C:\Users\nigmaz\source\repos\WannaCry\x64\Release\WannaCry.exe" start = "auto"
   ```
+  * Run service
   ```powershell
   sc start mssecsvc2.0
   sc stop mssecsvc2.0
