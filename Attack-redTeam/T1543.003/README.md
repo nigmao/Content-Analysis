@@ -7,6 +7,7 @@
   ```powershell
   sc create "mssecsvc2.0" DisplayName= "Microsoft Security Center (2.0) Service" binPath= "C:\Users\nigmaz\source\repos\WannaCry\x64\Release\WannaCry.exe" start= "auto"
   ```
+  * Start, stop, delete service
   ```powershell
   sc start mssecsvc2.0
   ```
@@ -15,7 +16,7 @@
   ```
   ```pơwershell
   sc delete mssecsvc2.0
-  ```  * Run service
+  ```  
  
 - Modify Service `(Administrator: Command Prompt)`
   * Modify google update service.
