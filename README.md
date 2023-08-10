@@ -17,7 +17,7 @@
 - Sysmonlog
   * [Download Sysmon64.exe - Sysinternal](https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon) .
   * [File sysmon-config.xml](https://github.com/SwiftOnSecurity/sysmon-config) .
-  * `Sysmon struct-field` * [Setup struct-field in EventViewer | config.xml](https://rootdse.org/posts/understanding-sysmon-events/#event-id-10-processaccess') .
+  * `Sysmon struct-field` => [Setup struct-field in EventViewer | config.xml](https://rootdse.org/posts/understanding-sysmon-events/#event-id-10-processaccess') .
   ```powershell
   ./Sysmon64.exe -accepteula -i sysmonconfig-export.xml
   ```
