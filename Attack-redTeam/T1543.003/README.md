@@ -5,7 +5,7 @@
 - Create Service
   - Create Service follow case attack WannaCry.
   ```powershell
-  sc create "mssecsvc2.0" DisplayName = "Microsoft Security Center (2.0) Service" binPath = "C:\Users\nigmaz\source\repos\WannaCry\x64\Release\WannaCry.exe"   start = "auto"
+  sc create "mssecsvc2.0" DisplayName = "Microsoft Security Center (2.0) Service" binPath = "C:\Users\nigmaz\source\repos\WannaCry\x64\Release\WannaCry.exe" start = "auto"
   sc start mssecsvc2.0
   sc stop mssecsvc2.0
   sc delete mssecsvc2.0
