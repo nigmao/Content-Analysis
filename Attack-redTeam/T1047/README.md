@@ -1,20 +1,11 @@
 # Windows Management Instrumentation
 
-- https://learn.microsoft.com/en-us/windows/win32/wmisdk/connecting-to-wmi-on-a-remote-computer
-- https://learn.microsoft.com/en-us/windows/win32/wmisdk/connecting-to-wmi-remotely-starting-with-vista
-- Thao tác GUI để add debug\Administrator
+- **REFERENCES:**
+    * https://learn.microsoft.com/en-us/windows/win32/wmisdk/connecting-to-wmi-remotely-starting-with-vista
+    * https://www.youtube.com/watch?v=ZwLbubzmjj4&t=385s
 
-```
-Component Services
-user Debug\Administrator 
-add 2 option 
-
-windows + R
-wmimgmt.msc => Security
-add user Debug\Administrator
-```
-
-## [0] CLIENTS
+## [0] CLIENTS - (Windows 10)
+- Nmap check port 135 - DCOM
 ```powershell 
 PS C:\Users\trant> nmap 192.168.137.145 -p 135
 Starting Nmap 7.94 ( https://nmap.org ) at 2023-08-07 12:49 SE Asia Standard Time
@@ -29,58 +20,91 @@ Nmap done: 1 IP address (1 host up) scanned in 13.43 seconds
 PS C:\Users\trant>
 ```
 
-- [1] [Bật mạng thành private](https://vitinhquan7.info/cach-thay-doi-mang-cong-cong-thanh-mang-rieng/)
-```
+- `1.` Set NetworkCategory: Private <[Bật mạng thành private](https://vitinhquan7.info/cach-thay-doi-mang-cong-cong-thanh-mang-rieng/)> .
+```powershell
 Get-NetConnectionProfile
-set NetworkCategory          : Private
 ```
 
-- [2] `Enable-PSRemoting -Force`
-- `winrm quickconfig` start winrm in clients
-- [3] set AllowUnencrypted true
+- `2.` Setup Service connect
+    * Allow PowerShell remote
+    ```powershell
+    Enable-PSRemoting -Force
+    ```
+    * Start winrm in clients
+    ```powershell
+    winrm quickconfig
+    ```
+- `3.` Set AllowUnencrypted: true
 ```powershell
 winrm get winrm/config/client
-$Set-Item WSMan:\localhost\Client\AllowUnencrypted -Value $true
-$Set-Item WSMan:\localhost\Service\AllowUnencrypted -Value $true
 ```
-- [4] WMI nhận máy server là legit
+```powershell
+Set-Item WSMan:\localhost\Client\AllowUnencrypted -Value $true
 ```
+```powershell
+Set-Item WSMan:\localhost\Service\AllowUnencrypted -Value $true
+```
+- `4.` WMI Clients allow Server is legit
+```powershell
 Set-Item WSMan:\localhost\Client\TrustedHosts -Value "192.168.137.145" -Concatenate -Force
 ```
-## [1] SERVER 
-` [1] Run WMIC in windows server 2019
-```
+
+## [1] SERVER - (Windows Server 2019)
+- `1.` Run WMIC in windows server 2019
+```powershell
 Set-Service -Name winrm -StartupType Automatic
 Start-Service winrm
 ```
 
-- [2] Đoạn allow firewall này nên xem thêm
-```
+- `2.` Add permisions user (GUI)
+    * `a.` Component Services/Computers/My Computer/Properties/COM Security
+    * `a.` Add user Debug\Administrator to 2 option `Edit Limits`
+    * `b.` Windows + R > wmimgmt.msc /WMI Control (Local)/Properties/Security/Security
+    * `b.` Add user Debug\Administrator full permisions
+
+- `3.` Allow firewall (GUI)
+    * File and Printer Sharing (Echo Request - ICMPv4-In) *
+    * File and Printer Sharing (Echo Request - ICMPv6-In) *
+    * Virtual Machine Monitoring (RPC)
+    * Windows Defender Firewall Remote Management (RPC)
+    * Windows Defender Firewall Remote Management (RPC-EPMAP)
+    * Windows Management Instrumentation (ASync-In) *
+    * Windows Management Instrumentation (DCOM-In) *
+    * Windows Management Instrumentation (WMI-In) *
+```powershell
 Get-Service -Name RpcSs
+```
+```powershell
 Start-Service -Name RpcSs
+```
+```powershell
 Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False
+```
+```powershell
 Set-NetFirewallRule -Name WINRM-HTTP-In-TCP-PUBLIC -RemoteAddress Any
-Set-NetFirewallRule -Name WINRM-HTTP-In-TCP-PRIVATE -RemoteAddress Any
 ```
 
-- [3] Allow PS remote
-```
+
+- `4.` Allow PowerShell remote
+```powershell
 Enable-PSRemoting -Force
 ```
 
-- [4] AllowUnencrypted
-```
+- `5.` AllowUnencrypted
+```powershell
 winrm get winrm/config/service
+```
+```powershell
 Set-Item WSMan:\localhost\Service\AllowUnencrypted -Value $true
 ```
 
 ## [2] POWERSHELL SCRIPT:
 - Local test
-```
+```powershell
 wmic /node:"127.0.0.1" process call create "calc.exe"
 ```
 - Remote test
-```
+```powershell
 Invoke-WmiMethod -Class Win32_Process -Name Create -ArgumentList 'calc.exe' -ComputerName <ip-server> -Credential 'debug\Administrator' 
 ```
 
