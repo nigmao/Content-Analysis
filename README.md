@@ -8,15 +8,15 @@
    * https://learn.microsoft.com/en-us/windows/win32/wmisdk/connecting-to-wmi-on-a-remote-computer
    * https://learn.microsoft.com/en-us/windows/win32/wmisdk/connecting-to-wmi-remotely-starting-with-vista
 ## [0] EventLogs
+- Threat Hunting with Sysmon and collecting, analyzing and sending logs to:
+  * 1. SIEM
+  * 2. Workstation logs (Linux or Windows)
 - Sysmonlog
-  * [setup filed in event-viewer config.xml](https://rootdse.org/posts/understanding-sysmon-events/#event-id-10-processaccess')
-  * https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon
+  * [Setup struct-field in EventViewer | config.xml](https://rootdse.org/posts/understanding-sysmon-events/#event-id-10-processaccess') .
+  * [Download Sysmon64.exe - Sysinternal](https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon) .
   ```powershell
-  sysmon -accepteula -i sysmonconfig-export.xml
+  ./Sysmon64.exe -accepteula -i sysmonconfig-export.xml
   ```
-  * Threat Hunting with sysmon and collecting, analyzing and sending logs to:
-    + 1. SIEM
-    + 2. Workstation logs (Linux or Windows)
   * Sysmon config - ID logs:
     + 1. Process creation: ID-1
     + 2. Network connection: ID-3 (Only UDP/TCP)
@@ -29,7 +29,7 @@
     + 9. DNS Events ID-22
   
 - Windows EventLogs:
-  * Event Viewer: view powershell logs script
+  * Event Viewer: View logs PowerShell Commands
      + https://learn.microsoft.com/en-us/powershell/scripting/windows-powershell/wmf/whats-new/script-logging?view=powershell-7.3
      + https://www.techtarget.com/searchwindowsserver/tutorial/Set-up-PowerShell-script-block-logging-for-added-security
 
