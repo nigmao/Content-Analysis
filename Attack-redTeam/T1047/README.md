@@ -75,13 +75,13 @@ Set-Item WSMan:\localhost\Service\AllowUnencrypted -Value $true
 ```
 
 ## [2] POWERSHELL SCRIPT:
-- Report
+- Local test
 ```
 wmic /node:"127.0.0.1" process call create "calc.exe"
 ```
-
+- Remote test
 ```
-Invoke-WmiMethod -Class Win32_Process -Name Create -ArgumentList 'calc.exe' -ComputerName 127.0.0.1 -Credential 'debug\Administrator' 
+Invoke-WmiMethod -Class Win32_Process -Name Create -ArgumentList 'calc.exe' -ComputerName <ip-server> -Credential 'debug\Administrator' 
 ```
 
 
