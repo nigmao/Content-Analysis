@@ -1,5 +1,6 @@
 # Windows Management Instrumentation
-
+- https://drive.google.com/file/d/1MkfdCFkW1shGq2QoT9e84aizpv4IGGow/view?usp=sharing
+- https://drive.google.com/file/d/1D3WodzFaGRrH4L4WNUwGXwrWahuvWK0E/view
 - **REFERENCES:**
     * https://learn.microsoft.com/en-us/windows/win32/wmisdk/connecting-to-wmi-remotely-starting-with-vista
     * https://www.youtube.com/watch?v=ZwLbubzmjj4&t=385s
