@@ -90,7 +90,7 @@ Set-NetFirewallRule -Name WINRM-HTTP-In-TCP-PUBLIC -RemoteAddress Any
 Enable-PSRemoting -Force
 ```
 
-- `5.` AllowUnencrypted
+- `5.` AllowUnencrypted: true
 ```powershell
 winrm get winrm/config/service
 ```
