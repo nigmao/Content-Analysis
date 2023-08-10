@@ -2,7 +2,7 @@
 
 - Code and compile program `Windows Service Application` - WannaCry.exe
 
-- Create Service
+- Create Service (Administrator: Command Prompt)
   - Create Service follow case attack WannaCry.
   ```powershell
   sc create "mssecsvc2.0" DisplayName = "Microsoft Security Center (2.0) Service" binPath = "C:\Users\nigmaz\source\repos\WannaCry\x64\Release\WannaCry.exe" start = "auto"
@@ -11,7 +11,7 @@
   sc delete mssecsvc2.0
   ```
 
-- Modify Service
+- Modify Service (Administrator: Command Prompt)
   * Modify google update service.
   ```powershell 
   sc config gupdate binPath= "C:\Users\nigmaz\source\repos\WannaCry\x64\Release\WannaCry.exe"
