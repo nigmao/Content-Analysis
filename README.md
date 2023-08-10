@@ -13,8 +13,8 @@
    * https://learn.microsoft.com/en-us/windows/win32/wmisdk/connecting-to-wmi-remotely-starting-with-vista
 ## [1] EventLogs
 - Threat Hunting with Sysmon and collecting, analyzing and sending logs to:
-  * `1.` SIEM
-  * `2.` Workstation logs (Linux or Windows)
+  * `1.` SIEM.
+  * `2.` Workstation logs (Linux or Windows).
 - Sysmonlog
   * [Download Sysmon64.exe - Sysinternal](https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon) .
   * [File sysmon-config.xml](https://github.com/SwiftOnSecurity/sysmon-config) .
