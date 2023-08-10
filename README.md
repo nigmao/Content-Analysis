@@ -3,7 +3,7 @@
 - MITRE ATT&CK Fundamentals, Sysmon Log Basic, Windows Event Log.
 - [Learn sysinternal](https://www.youtube.com/watch?v=fCp2usRXmGg) .
 - [PowerShell Script to Connect Multiple Server's Remote Session](https://www.youtube.com/watch?v=zaSxFqLTf0s&t=124s) .
-- [Powershell learn](https://learn.microsoft.com/en-us/training/modules/script-with-powershell/2-introduction-scripting) .
+- [Powershell Svcript learn Microsoft](https://learn.microsoft.com/en-us/training/modules/script-with-powershell/2-introduction-scripting) .
 - **NOTE:**
    * https://www.nextron-systems.com/2018/02/10/write-sigma-rules/
    * https://detection.fyi/sigmahq/sigma/windows/process_creation/proc_creation_win_wmic_uninstall_application/?query=t1047
