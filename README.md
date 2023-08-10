@@ -1,13 +1,16 @@
 # Content-Analysis
+## [1] Knowledge:
+- MITRE ATT&CK Fundamentals, Sysmon Log Basic, Windows Event Log.
+- [Learn sysinternal](https://www.youtube.com/watch?v=fCp2usRXmGg) .
+- [PowerShell Script to Connect Multiple Server's Remote Session](https://www.youtube.com/watch?v=zaSxFqLTf0s&t=124s) .
+- [Powershell learn](https://learn.microsoft.com/en-us/training/modules/script-with-powershell/2-introduction-scripting) .
 - **NOTE:**
-   * [Learn sysinternal](https://www.youtube.com/watch?v=fCp2usRXmGg) .
-   * [PowerShell Script to Connect Multiple Server's Remote Session](https://www.youtube.com/watch?v=zaSxFqLTf0s&t=124s) .
    * https://www.nextron-systems.com/2018/02/10/write-sigma-rules/
    * https://detection.fyi/sigmahq/sigma/windows/process_creation/proc_creation_win_wmic_uninstall_application/?query=t1047
    * https://redcanary.com/threat-detection-report/techniques/windows-management-instrumentation/
    * https://learn.microsoft.com/en-us/windows/win32/wmisdk/connecting-to-wmi-on-a-remote-computer
    * https://learn.microsoft.com/en-us/windows/win32/wmisdk/connecting-to-wmi-remotely-starting-with-vista
-## [0] EventLogs
+## [1] EventLogs
 - Threat Hunting with Sysmon and collecting, analyzing and sending logs to:
   * 1. SIEM
   * 2. Workstation logs (Linux or Windows)
@@ -33,14 +36,10 @@
   ```powershell
   Open the Local Group Policy Editor/Computer Configuration/Administrative Templates/Windows Components/Windows PowerShell/Turn on PowerShell Script Block Logging.
   ```
-
-## [1] Knowledge:
-- MITRE ATT&CK Fundamentals, Sysmon Log Basic, Windows Event Log.
-- Powershell learn
-   * https://learn.microsoft.com/en-us/training/modules/script-with-powershell/2-introduction-scripting
-   * PowerShell default disable run script `Set-ExecutionPolicy Unrestricted` . 
+  * PowerShell default disable run script `Set-ExecutionPolicy Unrestricted` .
      + Restricted: No Powershell scripts can be run. This is the default setting. 
      + AllSigned: Scripts can be run, but all must have a digital signature. Even if you wrote the script yourself on the local computer. 
      + RemoteSigned: Locally-written scripts can be run. But scripts from outside (email, IM, Internet) must be signed by a trusted publisher. 
      + Unrestricted: Any script will run. Regardless of who created them or whether they are signed.
-- ...
+
+
