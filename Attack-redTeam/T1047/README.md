@@ -7,6 +7,7 @@
     * Rule:
          + https://detection.fyi/sigmahq/sigma/windows/process_creation/proc_creation_win_wmic_uninstall_application/?query=t1047
          + https://redcanary.com/threat-detection-report/techniques/windows-management-instrumentation/
+         + https://attack.mitre.org/techniques/T1047/
 
 ## [0] CLIENTS - (Windows 10)
 - Nmap check port 135 - DCOM
