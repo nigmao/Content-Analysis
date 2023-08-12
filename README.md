@@ -43,4 +43,4 @@
      + `Unrestricted:` Any script will run => Regardless of who created them or whether they are signed.
 
 - Linux EventLogs:
-    * Event Logs in Linux "/var/log" .
+    * Event Logs in Linux `/var/log` .
