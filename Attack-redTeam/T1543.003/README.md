@@ -1,6 +1,12 @@
 # Create or Modify System Process: Windows Service
 
-- https://drive.google.com/file/d/1rcu8VCZr3erZg_fBgMniqbGxXuJk138P/view?usp=sharing
+- References:
+  + https://drive.google.com/file/d/1rcu8VCZr3erZg_fBgMniqbGxXuJk138P/view?usp=sharing
+  + https://attack.mitre.org/techniques/T1543/003/
+  + https://github.com/SigmaHQ/sigma/blob/master/rules/windows/process_creation/proc_creation_win_sc_service_path_modification.yml
+  + https://github.com/SigmaHQ/sigma/blob/master/rules/windows/process_creation/proc_creation_win_sc_create_service.yml
+  + https://github.com/SigmaHQ/sigma/blob/master/rules/windows/process_creation/proc_creation_win_powershell_create_service.yml
+  + https://github.com/SigmaHQ/sigma/tree/master/rules/windows/process_creation
 
 - Code and compile program `Windows Service Application` - WannaCry.exe
 
