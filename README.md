@@ -42,4 +42,5 @@
      + `RemoteSigned` Locally-written scripts can be run => But scripts from outside (email, IM, Internet) must be signed by a trusted publisher. 
      + `Unrestricted:` Any script will run => Regardless of who created them or whether they are signed.
 
-
+- Linux EventLogs:
+    * Event Logs in Linux "/var/log" .
