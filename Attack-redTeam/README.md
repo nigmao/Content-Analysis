@@ -1,5 +1,8 @@
 # Attack-redTeam
-> Simulate Technique red team https://attack.mitre.org/
+> Simulate Technique red team
+- References:
+     * https://attack.mitre.org/
+     * https://d3fend.mitre.org/
 - Mitre ATT&CK
     * `T1047`> Windows Management Instrumentation
     * `T1543.003`> Create or Modify System Process: Windows Service
