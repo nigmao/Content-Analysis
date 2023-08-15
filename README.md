@@ -1,7 +1,6 @@
 # Content-Analysis
 - https://download-directory.github.io
-- https://repo.zenk-security.com/Linux%20et%20systemes%20d.exploitations/Windows%20Internals%20Part%201_6th%20Edition.pdf
-  
+- [Malware Hunting with Microsoft Sysintenals Tools | TryHackMe](https://www.youtube.com/watch?v=owAOHsLyD3Y) .
 ## [0] Knowledge:
 - MITRE ATT&CK Fundamentals, Sysmon Log Basic, Windows Event Log.
 - [Learn sysinternal](https://www.youtube.com/watch?v=fCp2usRXmGg) .
