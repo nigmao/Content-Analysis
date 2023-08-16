@@ -13,3 +13,5 @@
      * https://dmcxblue.gitbook.io/red-team-notes-2-0/red-team-techniques/defense-evasion/t1055-process-injection/thread-local-storage
      * https://github.com/MahmoudZohdy/Process-Injection-Techniques
      * https://www.youtube.com/watch?v=CwglaQRejio
+
+![tls-struct.jpeg](./tls-struct.jpeg)
