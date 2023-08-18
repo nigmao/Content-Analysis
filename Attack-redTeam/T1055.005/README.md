@@ -10,7 +10,6 @@
     * Windows API calls such as CreateRemoteThread
     * As another example, Ursnif/Gozi-ISFB malware manipulated TLS callbacks while injecting the child process
 - References:
-     * https://dmcxblue.gitbook.io/red-team-notes-2-0/red-team-techniques/defense-evasion/t1055-process-injection/thread-local-storage
      * https://github.com/MahmoudZohdy/Process-Injection-Techniques
      * https://www.youtube.com/watch?v=CwglaQRejio
      * https://ctfcracker.gitbook.io/process-injection/process-injection-part-2 
