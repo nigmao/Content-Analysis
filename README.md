@@ -30,6 +30,7 @@
     + `7.` Registry Key ID-12/13/14
     + `8.` Alternate Data streams ID-15
     + `9.` DNS Events ID-22
+     ![SysmonEventID.png](./images/SysmonEventID.png)
   
 - Windows EventLogs:
   * Event Viewer: View logs PowerShell Commands
