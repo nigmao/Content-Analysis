@@ -2,7 +2,6 @@
 
 - Malicious TLS Callback
 - https://www.mandiant.com/resources/blog/newly-observed-ursnif-variant-employs-malicious-tls-callback-technique-achieve-process-injection
-- https://www.picussecurity.com/resource/blog/picus-10-critical-mitre-attck-techniques-t1055-process-injection
 - https://github.com/austinsonger/Incident-Playbook/blob/main/Playbooks/MITRE-ATTACK/Defense%20Evasion/T1055-Process-Injection.md
 - https://www.picussecurity.com/resource/t1055-process-injection-of-the-mitre-attck-framework
 - https://attack.mitre.org/techniques/T1055/005/
