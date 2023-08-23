@@ -6,8 +6,9 @@
     * https://attack.mitre.org/techniques/T1055/005/
     * https://github.com/MahmoudZohdy/Process-Injection-Techniques
     * https://www.youtube.com/watch?v=CwglaQRejio
+    * https://www.ired.team/offensive-security/code-injection-process-injection/injecting-to-remote-process-via-thread-hijacking
     * Rule:
-         +
+         + ...
          + Subtech`T1055.001:` https://ctfcracker.gitbook.io/process-injection/process-injection-part-2 
 
 ![tls-struct.jpeg](./tls-struct.jpeg)
