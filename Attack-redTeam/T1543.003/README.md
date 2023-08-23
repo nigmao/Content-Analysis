@@ -10,6 +10,7 @@
         + https://github.com/SigmaHQ/sigma/blob/master/rules/windows/process_creation/proc_creation_win_powershell_create_service.yml
         + https://github.com/SigmaHQ/sigma/tree/master/rules/windows/process_creation
         + https://valhalla.nextron-systems.com/info/sigma-rule/85ff530b-261d-48c6-a441-facaa2e81e48
+        + `Registry` https://github.com/elastic/detection-rules/blob/59da2da4740da52df15ce11139150b61cd57f9e1/rules/windows/persistence_services_registry.toml
 
 - Code and compile program `Windows Service Application` - WannaCry.exe
 
