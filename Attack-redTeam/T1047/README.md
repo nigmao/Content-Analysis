@@ -5,6 +5,7 @@
 - **REFERENCES:**
     * https://learn.microsoft.com/en-us/windows/win32/wmisdk/connecting-to-wmi-remotely-starting-with-vista
     * https://www.youtube.com/watch?v=ZwLbubzmjj4&t=385s
+    * https://www.youtube.com/watch?v=tLyTLQ01508
     * Rule:
          + https://detection.fyi/sigmahq/sigma/windows/process_creation/proc_creation_win_wmic_uninstall_application/?query=t1047
          + https://redcanary.com/threat-detection-report/techniques/windows-management-instrumentation/
