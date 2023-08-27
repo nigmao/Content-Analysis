@@ -2,6 +2,10 @@
 - https://download-directory.github.io
 - [Malware Hunting with Microsoft Sysintenals Tools | TryHackMe](https://www.youtube.com/watch?v=owAOHsLyD3Y) .
 - Rule Snort, Surikata
+- `Timeline:`
+   * tìm hiểu về registry
+   * svchost.exe
+   * explorer.exe
 ## [0] Knowledge:
 - MITRE ATT&CK Fundamentals, Sysmon Log Basic, Windows Event Log.
 - [Learn sysinternal](https://www.youtube.com/watch?v=fCp2usRXmGg) .
