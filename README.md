@@ -6,6 +6,9 @@
    * tìm hiểu về registry
    * svchost.exe
    * explorer.exe
+- `Redteam References:`
+   * https://book.hacktricks.xyz/welcome/readme
+   * https://www.ired.team/offensive-security/code-injection-process-injection/process-injection
 ## [0] Knowledge:
 - MITRE ATT&CK Fundamentals, Sysmon Log Basic, Windows Event Log.
 - [Learn sysinternal](https://www.youtube.com/watch?v=fCp2usRXmGg) .
