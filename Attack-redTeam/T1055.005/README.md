@@ -9,7 +9,7 @@
     * Attack:
          + https://github.com/MahmoudZohdy/Process-Injection-Techniques 
          + https://www.picussecurity.com/resource/t1055-process-injection-of-the-mitre-attck-framework
-         + 
+         + https://www.ired.team/offensive-security/code-injection-process-injection/process-injection
     * Rule:
          + ...
          + Subtech`T1055.001:` https://ctfcracker.gitbook.io/process-injection/process-injection-part-2 
