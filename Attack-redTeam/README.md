@@ -6,3 +6,4 @@
 - Mitre ATT&CK
     * `T1047`> Windows Management Instrumentation
     * `T1543.003`> Create or Modify System Process: Windows Service
+- CreateRemoteThread Shellcode Injection: https://www.ired.team/offensive-security/code-injection-process-injection/process-injection
