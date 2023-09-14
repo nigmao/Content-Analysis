@@ -56,3 +56,9 @@
 
 - Linux EventLogs:
     * Event Logs in Linux `/var/log` .
+
+## [2] Ecosystem SOC team:
+- splunk
+- soa
+- siem
+- ...
