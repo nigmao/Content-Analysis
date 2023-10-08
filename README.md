@@ -1,6 +1,4 @@
 # Content-Analysis
-- https://download-directory.github.io
-- [Malware Hunting with Microsoft Sysintenals Tools | TryHackMe](https://www.youtube.com/watch?v=owAOHsLyD3Y) .
 - Rule Snort, Surikata
 - `Timeline:`
    * tìm hiểu về registry
