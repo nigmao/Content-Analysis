@@ -1,15 +1,10 @@
 # Content-Analysis
 - Rule Snort, Surikata
-- `Timeline:`
-   * tìm hiểu về registry
-   * svchost.exe
-   * explorer.exe
+
 - `Redteam References:`
    * https://book.hacktricks.xyz/welcome/readme
    * https://www.ired.team/offensive-security/code-injection-process-injection/process-injection
-- `Certifications:`
-   * https://www.giac.org/
-   * https://www.sans.org/apac/
+
 ## [0] Knowledge:
 - MITRE ATT&CK Fundamentals, Sysmon Log Basic, Windows Event Log.
 - [Learn sysinternal](https://www.youtube.com/watch?v=fCp2usRXmGg) .
@@ -18,9 +13,7 @@
 - [Sample write rule Sigma](https://www.nextron-systems.com/2018/02/10/write-sigma-rules/) .
 
 ## [1] EventLogs
-- Threat Hunting with Sysmon and collecting, analyzing and sending logs to:
-  * `1.` SIEM.
-  * `2.` Workstation logs (Linux or Windows).
+
 - Sysmonlog
   * [Download Sysmon64.exe - Sysinternal](https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon) .
   * [File sysmon-config.xml](https://github.com/SwiftOnSecurity/sysmon-config) .
@@ -55,8 +48,3 @@
 - Linux EventLogs:
     * Event Logs in Linux `/var/log` .
 
-## [2] Ecosystem SOC team:
-- splunk
-- soa
-- siem
-- ...
