@@ -4,6 +4,7 @@
 - `Redteam References:`
    * https://book.hacktricks.xyz/welcome/readme
    * https://www.ired.team/offensive-security/code-injection-process-injection/process-injection
+   * https://redcanary.com/threat-detection-report/techniques/modify-registry/
 
 ## [0] Knowledge:
 - MITRE ATT&CK Fundamentals, Sysmon Log Basic, Windows Event Log.
