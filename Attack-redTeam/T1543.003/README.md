@@ -4,6 +4,7 @@
     * https://drive.google.com/file/d/1rcu8VCZr3erZg_fBgMniqbGxXuJk138P/view?usp=sharing
 - **REFERENCES:**
     * https://attack.mitre.org/techniques/T1543/003/
+    * [malware analysis persistence-technique](https://cocomelonc.github.io/tutorial/2022/05/09/malware-pers-4.html) .
     * Rule:
         + https://github.com/SigmaHQ/sigma/blob/master/rules/windows/process_creation/proc_creation_win_sc_service_path_modification.yml
         + https://github.com/SigmaHQ/sigma/blob/master/rules/windows/process_creation/proc_creation_win_sc_create_service.yml
