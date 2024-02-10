@@ -7,6 +7,7 @@
    * https://redcanary.com/threat-detection-report/techniques/modify-registry/
    * https://github.com/redcanaryco/atomic-red-team
    * https://atomicredteam.io/atomics/#impact
+   * https://gtfobins.github.io
 
 ## [0] Knowledge:
 - MITRE ATT&CK Fundamentals, Sysmon Log Basic, Windows Event Log.
